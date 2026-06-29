@@ -1,0 +1,786 @@
+/* ==========================================================
+   LAEN — Luxury Haircare | External Stylesheet
+   CIS300 Web Design | Student ID: 1231013448
+   ========================================================== */
+
+/* ── 1. BRAND COLOR VARIABLES (from realtimecolors.com export) ── */
+:root {
+  --background: #E8E0D4;
+  --surface: #C9B5A5;
+  --primary: #3D2318;
+  --secondary: #9B7B6A;
+  --accent: #BFA99A;
+  --text: #2E1A10;
+  --text-light: #6B4F3A;
+  --white: #FDFAF7;
+  --border: #D4C4B5;
+
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --max-width: 1140px;
+  --radius: 2px;
+  --transition: 0.25s ease;
+}
+
+/* ── 2. RESET & BASE ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Accessibility — screen-reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ── 3. HEADER ── */
+header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 2rem;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.logo-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-wordmark {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: var(--primary);
+  font-style: italic;
+}
+
+.logo-tagline {
+  font-size: 0.65rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-top: 0.2rem;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--text-light);
+}
+
+.header-links a {
+  color: var(--primary);
+  font-size: 0.8rem;
+}
+
+.lang-toggle,
+.header-handle {
+  color: var(--secondary);
+}
+
+/* ── 4. NAV ── */
+nav {
+  background-color: var(--primary);
+  padding: 0 2rem;
+}
+
+.nav-list {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.nav-list li a {
+  display: block;
+  padding: 1rem 1.25rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.nav-list li a:hover,
+.nav-list li a.nav-active {
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.07);
+  opacity: 1;
+}
+
+.nav-search {
+  margin-left: auto;
+  padding: 0.6rem 0;
+}
+
+.nav-search input {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius);
+  color: var(--white);
+  font-size: 0.78rem;
+  padding: 0.4rem 0.85rem;
+  outline: none;
+  letter-spacing: 0.05em;
+  transition: background var(--transition);
+}
+
+.nav-search input::placeholder {
+  color: var(--accent);
+}
+
+.nav-search input:focus {
+  background: rgba(255,255,255,0.18);
+}
+
+/* ── 5. BUTTONS ── */
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.8rem 1.75rem;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--text);
+  border-color: var(--text);
+  opacity: 1;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  opacity: 1;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--secondary);
+  border-color: var(--surface);
+  font-size: 0.72rem;
+}
+
+.btn-outline:hover {
+  background-color: var(--surface);
+  color: var(--primary);
+  opacity: 1;
+}
+
+/* ── 6. SECTION UTILITIES ── */
+section {
+  padding: 5rem 2rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.section-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  letter-spacing: 0.04em;
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+}
+
+/* ── 7. HERO ── */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  min-height: 520px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.1;
+  color: var(--primary);
+  margin-bottom: 1.25rem;
+}
+
+.hero-sub {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  max-width: 420px;
+  margin-bottom: 2rem;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-image-placeholder {
+  flex: 1;
+  min-height: 380px;
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  background-image: linear-gradient(135deg, #C9B5A5 0%, #BFA99A 100%);
+}
+
+/* ── 8. FEATURED PRODUCTS ── */
+.featured-products {
+  background-color: var(--white);
+  text-align: center;
+}
+
+.featured-products .section-title,
+.featured-products .section-subtitle {
+  text-align: center;
+}
+
+.product-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  transition: box-shadow var(--transition);
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 24px rgba(61, 35, 24, 0.08);
+}
+
+.product-image-box {
+  width: 100%;
+  height: 200px;
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  background-image: linear-gradient(180deg, #C9B5A5 0%, #BFA99A 100%);
+  margin-bottom: 0.5rem;
+}
+
+.product-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--primary);
+}
+
+.product-desc {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary);
+  letter-spacing: 0.05em;
+}
+
+/* ── 9. BRAND SPOTLIGHT + NEWSLETTER ── */
+.spotlight-newsletter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  align-items: start;
+}
+
+.brand-spotlight {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.spotlight-image-box {
+  width: 100%;
+  height: 260px;
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  background-image: linear-gradient(160deg, #C9B5A5 0%, #9B7B6A 100%);
+}
+
+.spotlight-text h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.spotlight-text p {
+  font-size: 0.93rem;
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+
+.video-wrap {
+  margin-top: 1.5rem;
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.video-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+video {
+  border-radius: var(--radius);
+  background-color: var(--primary);
+}
+
+/* Newsletter */
+.newsletter {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+}
+
+.newsletter h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.newsletter p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  min-width: 180px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  background-color: var(--background);
+  color: var(--text);
+  outline: none;
+}
+
+.newsletter-form input[type="email"]:focus {
+  border-color: var(--secondary);
+}
+
+.social-links {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
+.ext-link-note {
+  font-size: 0.82rem;
+  color: var(--text-light);
+}
+
+/* ── 10. HAIR GUIDE PREVIEW ── */
+.hair-guide-preview {
+  background-color: var(--white);
+  text-align: center;
+}
+
+.tip-grid {
+  max-width: var(--max-width);
+  margin: 0 auto 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.tip-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tip-image-box {
+  width: 100%;
+  height: 160px;
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  background-image: linear-gradient(135deg, #BFA99A 0%, #C9B5A5 100%);
+  margin-bottom: 0.25rem;
+}
+
+.tip-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+.tip-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--primary);
+}
+
+.tip-body {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* ── 11. COMPARISON TABLE ── */
+.ingredient-table-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.comparison-table th {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.9rem 1.25rem;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.comparison-table td {
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: top;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background-color: var(--white);
+}
+
+.comparison-table tbody tr:hover {
+  background-color: var(--surface);
+}
+
+.comparison-table td:first-child {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+/* ── 12. REVIEWS ── */
+.reviews {
+  background-color: var(--white);
+  text-align: center;
+}
+
+.review-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.review-card {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.75rem;
+  font-style: normal;
+}
+
+.stars {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+.review-text {
+  font-size: 0.93rem;
+  color: var(--text);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.review-card cite {
+  font-size: 0.78rem;
+  color: var(--secondary);
+  letter-spacing: 0.06em;
+  font-style: normal;
+}
+
+/* ── 13. CONTACT FORM ── */
+.contact-section {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.93rem;
+  font-family: var(--font-body);
+  background-color: var(--white);
+  color: var(--text);
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--secondary);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* ── 14. FOOTER ── */
+footer {
+  background-color: var(--primary);
+  color: var(--accent);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  justify-content: center;
+}
+
+.footer-nav a {
+  color: var(--accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color var(--transition);
+}
+
+.footer-nav a:hover {
+  color: var(--white);
+  opacity: 1;
+}
+
+.footer-email a {
+  color: var(--white);
+  font-size: 0.88rem;
+  letter-spacing: 0.06em;
+}
+
+.footer-copy {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--secondary);
+  text-transform: uppercase;
+}
+
+/* ── 15. RESPONSIVE ── */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-image-placeholder {
+    min-height: 240px;
+    width: 100%;
+  }
+
+  .spotlight-newsletter {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+  }
+
+  .nav-list li a {
+    padding: 0.75rem 0.9rem;
+    font-size: 0.72rem;
+  }
+
+  section {
+    padding: 3rem 1.5rem;
+  }
+}
