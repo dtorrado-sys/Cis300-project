@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Laen Hair Guide — expert tips for dry hair, scalp care, color-treated hair, and heat protection." />
+  <meta name="keywords" content="hair guide, hair tips, scalp care, color treated hair, heat protection, luxury haircare" />
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YBTDTP7Q3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-3YBTDTP7Q3");
+  </script>
+  <meta name="author" content="Daniela Torrado" />
+  <title>Hair Guide — Laen Luxury Haircare</title>
+  <link rel="stylesheet" href="laen.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-block">
+        <span class="logo-wordmark">Laen</span>
+        <span class="logo-tagline">Luxury Hair</span>
+      </div>
+      <div class="header-links">
+        <a href="contact.html">Contact</a>
+        <a href="https://www.instagram.com/laen" target="_blank" rel="noopener">Instagram ↗</a>
+        <span class="header-handle">@laen</span>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Products</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="hair-guide.html" class="nav-active">Hair Guide</a></li>
+      <li><a href="contact.html">Where to Buy</a></li>
+    </ul>
+    <div class="nav-search">
+      <input type="text" placeholder="Search…" aria-label="Search" />
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <p class="hero-eyebrow">Hair Guide</p>
+      <h1 class="section-title" style="font-size: 3rem;">Know your hair. Love your hair.</h1>
+      <p class="hero-sub" style="max-width: 580px; margin: 0 auto;">Four expert tips curated for every hair type. Whether your hair is dry, color-treated, heat-styled, or struggling at the scalp — we have something for you.</p>
+    </section>
+
+    <!-- TIP 1 -->
+    <section class="guide-tip-section">
+      <div class="guide-tip-grid">
+        <img src="tip1-dry.png" alt="Tip 1 — blow drying hair with heat protection" class="guide-tip-image" style="width:100%; height:360px; object-fit:cover; border-radius:2px;" />
+        <div class="guide-tip-text">
+          <p class="eyebrow-label">Tip 01</p>
+          <h2 class="section-title">For dry hair</h2>
+          <p>Dry hair is thirsty hair — and it needs more than just a quick rinse of conditioner. The key is to layer moisture and give it time to absorb before washing it away.</p>
+          <p>Apply the Laen Conditioner generously on damp hair from mid-length to ends. Let it sit for a full three minutes before rinsing with lukewarm water. The AHA complex in the formula works best when given time to penetrate the cuticle, so patience here pays off visibly.</p>
+          <p>For an intensive weekly treatment, swap the conditioner for the Laen Treatment and leave it on for five to ten minutes under a shower cap. You will feel the difference from the very first use.</p>
+          <div class="guide-product-rec">
+            <p class="guide-rec-label">Recommended product</p>
+            <a href="shop.html" class="btn btn-outline">Laen Conditioner — $38.00</a>
+            <a href="shop.html" class="btn btn-outline" style="margin-left: 0.75rem;">Laen Treatment — $46.00</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIP 2 -->
+    <section class="guide-tip-section" style="background-color: var(--white);">
+      <div class="guide-tip-grid reverse">
+        <div class="guide-tip-text">
+          <p class="eyebrow-label">Tip 02</p>
+          <h2 class="section-title">Scalp care</h2>
+          <p>A healthy scalp is the foundation of healthy hair. Most people focus entirely on the lengths and ends — but if the scalp is congested, irritated, or out of balance, no amount of conditioning will fix the result.</p>
+          <p>When applying the Laen Shampoo, use your fingertips — not your nails — and massage in slow, circular motions for at least sixty seconds before rinsing. This stimulates circulation, loosens buildup, and allows the AHA complex to do its work on the scalp surface.</p>
+          <p>Avoid washing with water that is too hot. Hot water strips the scalp of its natural oils and can lead to overproduction of sebum, which makes hair look greasy faster than it should.</p>
+          <div class="guide-product-rec">
+            <p class="guide-rec-label">Recommended product</p>
+            <a href="shop.html" class="btn btn-outline">Laen Shampoo — $38.00</a>
+          </div>
+        </div>
+        <img src="tip2-scalp.png" alt="Tip 2 — scalp massage with shampoo" class="guide-tip-image" style="width:100%; height:360px; object-fit:cover; border-radius:2px;" />
+      </div>
+    </section>
+
+    <!-- TIP 3 -->
+    <section class="guide-tip-section">
+      <div class="guide-tip-grid">
+        <img src="tip3-color.png" alt="Tip 3 — color treated hair care" class="guide-tip-image" style="width:100%; height:360px; object-fit:cover; border-radius:2px;" />
+        <div class="guide-tip-text">
+          <p class="eyebrow-label">Tip 03</p>
+          <h2 class="section-title">Color-treated hair</h2>
+          <p>Color-treated hair has an open cuticle that loses pigment faster when exposed to heat, friction, and harsh formulas. The goal is to seal the cuticle as quickly as possible after washing and keep it sealed between washes.</p>
+          <p>Always finish your rinse with cool or cold water. It sounds simple, but it is one of the most effective things you can do to extend the life of your color. Cool water closes the cuticle, locks in moisture, and adds a noticeable shine to the hair surface.</p>
+          <p>Avoid washing color-treated hair more than three times per week. Between washes, use a dry shampoo at the roots to absorb oil without disturbing the color at the lengths.</p>
+          <div class="guide-product-rec">
+            <p class="guide-rec-label">Recommended product</p>
+            <a href="shop.html" class="btn btn-outline">Laen Shampoo — $38.00</a>
+            <a href="shop.html" class="btn btn-outline" style="margin-left: 0.75rem;">Laen Treatment — $46.00</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIP 4 -->
+    <section class="guide-tip-section" style="background-color: var(--white);">
+      <div class="guide-tip-grid reverse">
+        <div class="guide-tip-text">
+          <p class="eyebrow-label">Tip 04</p>
+          <h2 class="section-title">Heat protection</h2>
+          <p>Heat styling — blow drying, flat ironing, curling — strips moisture from the hair shaft and can cause structural damage to the protein bonds inside each strand over time. The right pre-styling routine makes a measurable difference.</p>
+          <p>Apply the Laen Treatment to damp hair before reaching for any heat tool. The AHA complex forms a light protective layer over the hair shaft that helps buffer the strand against high temperatures and reduces the visible frizz and breakage that come with daily heat styling.</p>
+          <p>Keep your tools at the lowest effective temperature and always move them in a continuous motion — holding heat in one spot is where the most damage occurs.</p>
+          <div class="guide-product-rec">
+            <p class="guide-rec-label">Recommended product</p>
+            <a href="shop.html" class="btn btn-outline">Laen Treatment — $46.00</a>
+          </div>
+        </div>
+        <img src="tip4-heat.png" alt="Tip 4 — heat styling with flat iron protection" class="guide-tip-image" style="width:100%; height:360px; object-fit:cover; border-radius:2px;" />
+      </div>
+    </section>
+
+    <!-- HAIR TYPE TABLE -->
+    <section style="padding: 5rem 2rem; max-width: var(--max-width); margin: 0 auto;">
+      <h2 class="section-title" style="text-align:center;">Find your Laen routine</h2>
+      <p class="section-subtitle" style="text-align:center;">Match your hair type to the right combination of Laen products.</p>
+
+      <div class="table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Hair Type</th>
+              <th>Recommended Shampoo Use</th>
+              <th>Recommended Conditioner Use</th>
+              <th>Recommended Treatment Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dry or damaged</td>
+              <td>2–3x per week</td>
+              <td>Every wash, 3 min leave-in</td>
+              <td>Weekly, 5–10 min leave-in</td>
+            </tr>
+            <tr>
+              <td>Oily scalp</td>
+              <td>Daily or every other day</td>
+              <td>Mid-length to ends only</td>
+              <td>Every 2 weeks</td>
+            </tr>
+            <tr>
+              <td>Color-treated</td>
+              <td>Max 3x per week, cool rinse</td>
+              <td>Every wash, seal with cool water</td>
+              <td>Weekly pre-heat styling</td>
+            </tr>
+            <tr>
+              <td>Fine or limp</td>
+              <td>Every other day</td>
+              <td>Ends only, rinse thoroughly</td>
+              <td>Bi-weekly, lightweight application</td>
+            </tr>
+            <tr>
+              <td>Thick or coarse</td>
+              <td>2x per week</td>
+              <td>Full application, 5 min leave-in</td>
+              <td>Weekly overnight mask</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="background-color: var(--primary); text-align: center; padding: 5rem 2rem;">
+      <p class="eyebrow-label" style="color: var(--accent);">Ready to start?</p>
+      <h2 style="font-family: var(--font-display); font-size: 2rem; font-weight: 400; font-style: italic; color: var(--white); margin-bottom: 1rem;">Build your Laen routine.</h2>
+      <p style="color: var(--accent); max-width: 500px; margin: 0 auto 2rem; font-size: 0.93rem; line-height: 1.7;">Every hair type deserves a routine that actually works. Start with the full Revitalizing Collection and build from there.</p>
+      <a href="shop.html" class="btn" style="background-color: var(--white); color: var(--primary); border-color: var(--white);">Shop the Collection</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Products</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="hair-guide.html">Hair Guide</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-email">
+        <a href="mailto:contact@laen.com">contact@laen.com</a>
+      </p>
+      <p class="footer-copy">© 2026 Laen. All rights reserved. Luxury Haircare.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
